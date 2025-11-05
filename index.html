@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First GitHub Page</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom font */
+        body {
+            font-family: 'montserrat', sans-serif;
+            animation: fadeIn 1.0s ease-in-out;
+        }
+        /* Gradient background for a modern look */
+        .hero-bg {
+            background: linear-gradient(135deg, #000000 0%, #5d667a 120%);
+        }
+        .button {
+            background: linear-gradient(90deg, #4759e5 0%, #839ed6 80%);
+        }
+        .button:hover {
+            background: linear-gradient(90deg, #4759e5 0%, #839ed6 80%);
+            box-shadow: 0 4px 14px 0 rgba(131, 158, 214, 0.39);
+            filter: brightness(1.2);
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="hero-bg min-h-screen flex flex-col justify-center items-center p-4 text-white">
+
+    <header class="mb-8 text-center">
+        <h1 class="text-4xl md:text-6xl lg:text-6xl font-bold">
+            Welcome to My Page!
+        </h1>
+    </header>
+
+    <nav class="flex space-x-4">
+        <a href="about.html" class="button button:hover text-white-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-300">
+            About Me
+        </a>
+        <a href="resume.html" class="button text-white-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-300">
+            Resume
+        </a>
+    </nav>
+
+
+</body>
+</html>

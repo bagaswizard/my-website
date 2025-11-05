@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom font */
+        body {
+            font-family: 'montserrat', sans-serif;
+            animation: fadeIn 1.0s ease-in-out;
+        }
+        /* Gradient background for a modern look */
+        .hero-bg {
+            background: linear-gradient(135deg, #000000 0%, #5d667a 120%);
+        }
+        .button {
+            background: linear-gradient(90deg, #4759e5 0%, #839ed6 80%);
+        }
+        .button:hover {
+            background: linear-gradient(90deg, #4759e5 0%, #839ed6 80%);
+            box-shadow: 0 4px 14px 0 rgba(131, 158, 214, 0.39);
+            filter: brightness(1.2);
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="hero-bg min-h-screen p-8 text-white">
+
+    <main class="max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-8 text-center">My Resume</h1>
+
+        <div class="text-center mb-8">
+            <a href="assets/CV_Bagas-Surya-W.pdf" download="My-Resume.pdf" class="button inline-flex items-center text-white font-bold py-2 px-4 rounded-lg">
+                <span>Download</span>
+                <svg class="fill-current w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+            </a>
+        </div>
+
+        <div class="border border-white p-8 rounded-lg">
+            <!-- Add your resume content here -->
+            <h2 class="text-2xl font-bold mb-4">Education</h2>
+            <ul class="list-disc list-inside">
+                <li>4th year student Electrical Engineering Institut Teknologi Sepuluh Nopember (ITS)</li>
+                <li>Cur. GPA: 3.57/4.00</li>
+            </ul>
+
+            <hr class="my-6 border-white opacity-25">
+
+            <h2 class="text-2xl font-bold mb-4">Experience</h2>
+                <li>research intern at BRIN (january - February 2025)    </li>
+        </div>
+
+        <div class="text-center mt-8">
+            <a href="index.html" class="text-white hover:underline">← Back to Home</a>
+    </main>
+
+</body>
+</html>
